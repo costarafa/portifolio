@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Meu portifolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ecebeb;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sobremim{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .main{
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1{
+            font-size: 50px;
+            word-break: break-all;
+        }
+        .row{
+            margin: 8px -16px;
+        }
+        .row, .row>.column{
+            padding: 5px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column{
+            float: left;
+            width: 25%;
+        }
+        @media screen and (max-width:500px) {
+            .column{
+                width: 50%;
+            }
+            
+        }
+        @media screen and (max-width:400px) {
+            .column{
+                width: 100%;
+            }
+            
+        }
+        .content{
+            background-color: white;
+            padding: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1>
+                Meu portifolio
+            </h1>
+            <hr>
+            <div class="row">
+                <h1>Rafaela Costa da Silva</h1>
+                <img class="column" src="imagens/perfil.jpeg" alt="" style="width:150px ;">
+
+                <p class="sobremim">Graduanda em Engenharia de Software - IFPR campus Paranavaí
+                    <br/>Gosto de participar de projetos, cursos e palestras que possam agregar meu conhecimento
+                    <br/>Moro em São João do Caiuá
+                    <br>Contato: (44) 98826 - 3683
+                </p>
+            </div>
+
+            <h2>EVENTOS QUE PARTICIPEI</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/hackcity.jpg" alt="Imagem sem conteúdo"style="width: 100%;">
+                        <h3>HACK CITY By InovaTech</h3>
+                        <p>Evento de programação que traz aos devs a possibilidade de denvolver experiência
+                            e trocar conhecimento com outros alunos. Os alunos precisam desenvolver algum produto 
+                            de acordo com o tema do evento, esse produto será avaliado por jurados, são classificados 
+                            em 1°, 2° e 3° lugar. Além disso o evento conta com várias palestras sobre tecnologia e inovação.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/iftech.jpg" alt="Imagem sem conteúdo"style="width: 100%;">
+                        <h3>IFTECH</h3>
+                        <p> Evento oferecido pelo IFPR. O evento trás palestras, minicursos, apresentação de projetos. 
+                            Permitindo que os alunos agregem conhecimento e se permitam descobrir mais areas que a tecnologia abrange.
+                            O interessante do evento é que os próprios alunos podem apresentar projetos e ministrar minicursos.                                
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/sipen.png" alt="Imagem sem conteúdo"style="width: 100%;">
+                        <h3>SIPEN</h3>
+                        <p>
+                            O SIPEN é um evento organizado por professores de diferentes áreas que compõem o Ensino Médio
+                             e tem como principal objetivo instigar os participantes a formarem pensamentos capazes de lidar 
+                             com os desafios contemporâneos.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/imagem5.png" alt="Imagem sem conteúdo"style="width: 100%;">
+                        <h3>EVENTO 4</h3>
+                        <p>Lorem ipsum risus luctus adipiscing ipsum suscipit interdum, justo varius nullam nulla primis magna. sem posuere commodo dictumst consequat gravida, egestas vulputate himenaeos sed per etiam, nisl neque nulla habitasse. </p>
+                    </div>
+                </div>
+            </div>
+            <h2>PROJETO ATUAL</h2>
+            <div class="content">
+                <h3>Sistemas de gestão de Associações</h3>
+                <p>
+                    Atualmente estou em um projeto de desenvolvimento de um site para associações.
+                    O site possui as páginas para exibição de eventos, fotos e vídeos dos eventos.
+                    Além do site, também tem a área administrativa, para a diretoria, fazer a gestão do site,
+                    autorizar cadastros, manter contato com os associados, etc.<br>
+                </p>
+                <img src="imagens/pista.jpg" style="width: 100%">
+            </div>
+        </div>
+    </body>
+    </html>
